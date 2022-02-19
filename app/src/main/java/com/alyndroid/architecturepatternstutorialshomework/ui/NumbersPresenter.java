@@ -1,6 +1,7 @@
 package com.alyndroid.architecturepatternstutorialshomework.ui;
 
-import com.alyndroid.architecturepatternstutorialshomework.pojo.NumberModel;
+import com.alyndroid.architecturepatternstutorialshomework.repo.model.NumberModel;
+import com.alyndroid.architecturepatternstutorialshomework.repo.DataBase;
 
 public class NumbersPresenter {
     INumbers numbers ;

@@ -1,4 +1,4 @@
-package com.alyndroid.architecturepatternstutorialshomework.pojo;
+package com.alyndroid.architecturepatternstutorialshomework.repo.model;
 
 public class NumberModel {
     private int firstNum, secondNum;

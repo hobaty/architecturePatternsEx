@@ -1,12 +1,13 @@
-package com.alyndroid.architecturepatternstutorialshomework.ui;
+package com.alyndroid.architecturepatternstutorialshomework.viewmodel;
 
-import com.alyndroid.architecturepatternstutorialshomework.pojo.NumberModel;
+import com.alyndroid.architecturepatternstutorialshomework.repo.model.NumberModel;
+import com.alyndroid.architecturepatternstutorialshomework.repo.DataBase;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class NumbersViewModel extends ViewModel {
-    MutableLiveData<Integer> numbersMutableLiveData = new MutableLiveData<>();
+    public MutableLiveData<Integer> numbersMutableLiveData = new MutableLiveData<>();
 
    private NumberModel getNumbers()
     {
@@ -17,7 +18,7 @@ public class NumbersViewModel extends ViewModel {
     {
         return getNumbers().getFirstNum() * getNumbers().getSecondNum();
     }
-    void getMulResult ()
+    public void getMulResult()
     {
         numbersMutableLiveData.setValue(mulTwoNumbers());
     }
